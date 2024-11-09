@@ -1,4 +1,4 @@
-## This repository is organized as follows
+### This repository is organized as follows
 
 Folders:
  - blank.lvl contains a dummy level that has object data injected into it by libImpossibleLevel
