@@ -4,314 +4,244 @@ int __cdecl spawnObjects3(int a1)
   void *v3; // [esp+Ch] [ebp-10h]
   int v4; // [esp+18h] [ebp-4h]
 
-  dword_299570 = a1;
+  dword_FB9570 = a1;
   loadLevelMusic(&v2, "soundtrack3.ogg", 0);
   v4 = 0;
-  sub_26D160(&v2, 1, 0);
+  sub_F8D160(&v2, 1, 0);
   v4 = -1;
   v2 = &UString::`vftable';
   if ( v3 )
     operator delete[](v3);
-  dword_299574 = 500;
-  flt_2986B0 = 0.60000002;
-  dword_2986B4 = -1;
-  dword_299578 = -200;
-  genSpikeObj((_DWORD *)dword_299570, 780, (int)(0.0 * 0.6000000238418579));
+  yOffset = 500;
+  scale = 0.60000002;
+  inversion = -1;
+  xOffset = -200;
+  genSpikeObj((_DWORD *)dword_FB9570, 780, (int)(0.0 * 0.6000000238418579));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 1900)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 1900)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 2400)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 2400)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 2800)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 2800)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 3400)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 3400)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 3800)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 3800)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 4300)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 4800)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 4850)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 4300)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 4800)), (int)((double)(inversion * (500 - yOffset)) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 4850)), (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 4850)),
-    (int)((double)(dword_2986B4 * (450 - dword_299574)) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 4900)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 4850)),
+    (int)((double)(inversion * (450 - yOffset)) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 4900)), (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 4900)),
-    (int)((double)(dword_2986B4 * (450 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 4900)),
+    (int)((double)(inversion * (450 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 5300)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 5300)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 5700)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 5700)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 6200)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 6200)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 6650)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 6650)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 7200)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 7200)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 7600)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 7600)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 8100)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 8450)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
-  genPitObj((int)(flt_2986B0 * (double)(dword_299578 + 8500)), (int)((double)(dword_299578 + 8615) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 8665)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 8665)),
-    (int)((double)(dword_2986B4 * (450 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 8100)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 8450)), (int)((double)(inversion * (500 - yOffset)) * scale));
+  genPitObj((int)(scale * (double)(xOffset + 8500)), (int)((double)(xOffset + 8615) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 8665)), (int)((double)(inversion * (500 - yOffset)) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 8665)), (int)((double)(inversion * (450 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 8715)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 8715)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 8765)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 8765)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 8815)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 8815)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 9150)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 9150)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 9600)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 9600)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 10100)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 10100)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 10550)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 10550)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 11100)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 11100)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 11500)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 11500)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 12000)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 12500)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 12715)),
-    (int)((double)(dword_2986B4 * (450 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 12000)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 12500)), (int)((double)(inversion * (500 - yOffset)) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 12715)), (int)((double)(inversion * (450 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 12715)),
-    (int)((double)(dword_2986B4 * (400 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 12715)),
+    (int)((double)(inversion * (400 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 13000)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 13000)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 13400)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 13400)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 13450)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 13450)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 13900)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 14300)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 14350)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 13900)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 14300)), (int)((double)(inversion * (500 - yOffset)) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 14350)), (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 14350)),
-    (int)((double)(dword_2986B4 * (450 - dword_299574)) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 14400)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 14350)),
+    (int)((double)(inversion * (450 - yOffset)) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 14400)), (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 14400)),
-    (int)((double)(dword_2986B4 * (450 - dword_299574)) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 14450)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 14400)),
+    (int)((double)(inversion * (450 - yOffset)) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 14450)), (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 14900)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 14900)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 15250)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 15250)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 15300)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 15300)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 15500)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 15500)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 15550)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 15550)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 15800)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 15800)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 16250)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 16250)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 16300)),
-    (int)((double)(dword_2986B4 * (500 - dword_299574)) * flt_2986B0));
-  colorChange((int)((double)(dword_299578 + 16300) * flt_2986B0), 5, 0);
-  colorChange((int)((double)(dword_299578 + 18150) * flt_2986B0), 1, 0);
-  blocksFall((int)(flt_2986B0 * (double)(dword_299578 + 16300)), (int)((double)(dword_299578 + 34100) * flt_2986B0));
-  blockLine(18700, 19560, 500);
-  genPitObj((int)(flt_2986B0 * (double)(dword_299578 + 18750)), (int)((double)(dword_299578 + 33550) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 19710)),
-    (int)((double)(dword_2986B4 * (350 - dword_299574)) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 19925)),
-    (int)((double)(dword_2986B4 * (300 - dword_299574)) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 20140)),
-    (int)((double)(dword_2986B4 * (250 - dword_299574)) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 20190)),
-    (int)((double)(dword_2986B4 * (250 - dword_299574)) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 20240)),
-    (int)((double)(dword_2986B4 * (250 - dword_299574)) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 20455)),
-    (int)((double)(dword_2986B4 * (200 - dword_299574)) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 20740)),
-    (int)((double)(dword_2986B4 * (250 - dword_299574)) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 20955)),
-    (int)((double)(dword_2986B4 * (200 - dword_299574)) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 21005)),
-    (int)((double)(dword_2986B4 * (200 - dword_299574)) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 21055)),
-    (int)((double)(dword_2986B4 * (200 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 16300)),
+    (int)((double)(inversion * (500 - yOffset)) * scale));
+  colorChange((int)((double)(xOffset + 16300) * scale), 5, 0);
+  colorChange((int)((double)(xOffset + 18150) * scale), 1, 0);
+  blocksRise1((int)(scale * (double)(xOffset + 16300)), (int)((double)(xOffset + 34100) * scale));
+  ascendingBlocks(18700, 19560, 500);
+  genPitObj((int)(scale * (double)(xOffset + 18750)), (int)((double)(xOffset + 33550) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 19710)), (int)((double)(inversion * (350 - yOffset)) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 19925)), (int)((double)(inversion * (300 - yOffset)) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 20140)), (int)((double)(inversion * (250 - yOffset)) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 20190)), (int)((double)(inversion * (250 - yOffset)) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 20240)), (int)((double)(inversion * (250 - yOffset)) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 20455)), (int)((double)(inversion * (200 - yOffset)) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 20740)), (int)((double)(inversion * (250 - yOffset)) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 20955)), (int)((double)(inversion * (200 - yOffset)) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 21005)), (int)((double)(inversion * (200 - yOffset)) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 21055)), (int)((double)(inversion * (200 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 21055)),
-    (int)((double)(dword_2986B4 * (150 - dword_299574)) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 21105)),
-    (int)((double)(dword_2986B4 * (200 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 21055)),
+    (int)((double)(inversion * (150 - yOffset)) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 21105)), (int)((double)(inversion * (200 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 21105)),
-    (int)((double)(dword_2986B4 * (150 - dword_299574)) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 21155)),
-    (int)((double)(dword_2986B4 * (200 - dword_299574)) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 21205)),
-    (int)((double)(dword_2986B4 * (200 - dword_299574)) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 21355)),
-    (int)((double)(dword_2986B4 * (250 - dword_299574)) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 21570)),
-    (int)((double)(dword_2986B4 * (200 - dword_299574)) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 21620)),
-    (int)((double)(dword_2986B4 * (200 - dword_299574)) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 21670)),
-    (int)((double)(dword_2986B4 * (200 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 21105)),
+    (int)((double)(inversion * (150 - yOffset)) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 21155)), (int)((double)(inversion * (200 - yOffset)) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 21205)), (int)((double)(inversion * (200 - yOffset)) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 21355)), (int)((double)(inversion * (250 - yOffset)) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 21570)), (int)((double)(inversion * (200 - yOffset)) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 21620)), (int)((double)(inversion * (200 - yOffset)) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 21670)), (int)((double)(inversion * (200 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 21670)),
-    (int)((double)(dword_2986B4 * (150 - dword_299574)) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 21720)),
-    (int)((double)(dword_2986B4 * (200 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 21670)),
+    (int)((double)(inversion * (150 - yOffset)) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 21720)), (int)((double)(inversion * (200 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 21720)),
-    (int)((double)(dword_2986B4 * (150 - dword_299574)) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 21770)),
-    (int)((double)(dword_2986B4 * (200 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 21720)),
+    (int)((double)(inversion * (150 - yOffset)) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 21770)), (int)((double)(inversion * (200 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 21770)),
-    (int)((double)(dword_2986B4 * (150 - dword_299574)) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 21820)),
-    (int)((double)(dword_2986B4 * (200 - dword_299574)) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 21870)),
-    (int)((double)(dword_2986B4 * (200 - dword_299574)) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 21920)),
-    (int)((double)(dword_2986B4 * (200 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 21770)),
+    (int)((double)(inversion * (150 - yOffset)) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 21820)), (int)((double)(inversion * (200 - yOffset)) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 21870)), (int)((double)(inversion * (200 - yOffset)) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 21920)), (int)((double)(inversion * (200 - yOffset)) * scale));
   genSpikeObj(
-    (_DWORD *)dword_299570,
-    (int)(flt_2986B0 * (double)(dword_299578 + 21920)),
-    (int)((double)(dword_2986B4 * (150 - dword_299574)) * flt_2986B0));
-  genBlockObj(
-    (int)(flt_2986B0 * (double)(dword_299578 + 21970)),
-    (int)((double)(dword_2986B4 * (200 - dword_299574)) * flt_2986B0));
+    (_DWORD *)dword_FB9570,
+    (int)(scale * (double)(xOffset + 21920)),
+    (int)((double)(inversion * (150 - yOffset)) * scale));
+  genBlockObj((int)(scale * (double)(xOffset + 21970)), (int)((double)(inversion * (200 - yOffset)) * scale));
   spike(21970, 150);
   block(22020, 200);
   spike(22020, 150);
@@ -421,7 +351,7 @@ int __cdecl spawnObjects3(int a1)
   block(29640, -100);
   spike(29640, -150);
   block(29690, -100);
-  blockLine(29840, 30915, -50);
+  ascendingBlocks(29840, 30915, -50);
   block(31045, -300);
   spike(31045, -350);
   block(31175, -300);
@@ -445,7 +375,7 @@ int __cdecl spawnObjects3(int a1)
   block(32435, -350);
   spike(32435, -400);
   block(32595, -350);
-  blockLine(32745, 33240, -300);
+  ascendingBlocks(32745, 33240, -300);
   block(33800, -200);
   block(33850, -150);
   block(33900, -100);
@@ -456,9 +386,9 @@ int __cdecl spawnObjects3(int a1)
   block(33900, -350);
   block(33950, -150);
   block(34000, -200);
-  colorChange((int)((double)(dword_299578 + 33600) * flt_2986B0), 5, 0);
-  colorChange((int)((double)(dword_299578 + 34550) * flt_2986B0), 0, 0);
-  sub_279070(35200, 51700);
+  colorChange((int)((double)(xOffset + 33600) * scale), 5, 0);
+  colorChange((int)((double)(xOffset + 34550) * scale), 0, 0);
+  fallingblocks(35200, 51700);
   block(35200, 500);
   pit(35250, 42995);
   block(35415, 450);
@@ -624,7 +554,7 @@ int __cdecl spawnObjects3(int a1)
   spike(50600, 500);
   spike(50900, 500);
   spike(50950, 500);
-  blockLine(51700, 60000, 500);
+  ascendingBlocks(51700, 60000, 500);
   pit(51750, 60000);
-  return genLevelEnd((int)((double)(dword_299578 + 51700) * flt_2986B0));
+  return genLevelEnd((int)((double)(xOffset + 51700) * scale));
 }
