@@ -8,6 +8,7 @@ extern int xOffset = -200;
 
 extern Level levelDat("blank.lvl/level.dat");
 
+//this is copied directly from the decompilation, idk exactly what it's doing but it's neccessary to properly generate the level
 void messStuffUp(int *a1, int *a2)
 {
   int result;
